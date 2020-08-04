@@ -1,0 +1,477 @@
+/* character encoding */
+@charset "utf-8";
+
+
+/* web font */
+@font-face{
+    font-family: 'LindenHill';
+    src:
+        url('LindenHill/LindenHill-Italic-webfont.woff'),
+        url('LindenHill/LindenHill-Italic-webfont.ttf'),
+        url('LindenHill/LindenHill-Italic-webfont.svg'),
+        url('LindenHill/LindenHill-Italic-webfont.eot');
+}
+
+
+/* general settings */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+    color: black;
+    font-family: 'Handlee', cursive;
+    font-size: 1.1em;
+    line-height: 1.5;
+    background-color: #fffce1;
+    margin: 0;
+}
+
+#container{
+    display: block;
+    margin: auto;
+    position: center;
+}
+
+
+nav {
+    font-size: 0.6em;
+    display: flex;
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1em;
+    border: 5px dotted deeppink;
+    
+}
+
+
+a.nav {
+    font-weight: bolder;
+    font-size: 1em;
+    background-color: #fffce1;
+    line-height: 150%;
+    margin: auto;
+}
+
+
+
+main {
+    margin-top: 90px;
+    clear: both;
+}
+
+.portrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-radius: 600px;
+    border-width: 9px;
+    border-color: gold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+h1{
+    font-family: 'Seaweed Script', cursive;
+    font-size: 3em;
+    font-weight: bolder;
+    color: #db3d92;
+    text-align: center;
+    line-height: 20%;
+    
+
+/*
+    border: 5px solid white;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 10px 0px 5px;
+    margin: auto;
+*/
+}
+
+h2{
+    font-family: 'Bad Script', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 30%;
+
+    font-size: 3em;
+    color: #f81c97;
+}
+
+
+h3{
+    display: block;
+    font-family: 'Handlee', cursive;
+    font-size: 1.5em;
+    color: #9b7b00;
+    background-color: #ffe5e1;
+    padding: 0.8em 0.5em;
+    border-style: dotted;
+    border-radius: 0.5em;
+    border-color: ghostwhite;
+    font-size: 1.8em;
+}
+
+h4{
+    line-height: 5em;
+}
+
+h5{
+    font-size: 1.5em;
+    color: deepskyblue;
+    margin: auto;
+    padding-top: 5em;
+}
+
+audio{
+    padding-top: 0em;
+    margin: auto;
+}
+
+p{
+    font-family: 'Solway', sans-serif;
+    font-size: 1.2em;
+    color: deeppink;
+}
+
+ul{
+    color: black;
+    font-family: font-family: 'Handlee', sans-serif;
+    list-style: none;
+    font-size: 1em;
+    list-style:circle; 
+}
+
+p,ul{
+    display: block;
+    background-color: #fff4e1;
+    margin: 0;
+    padding: 0.5em;
+
+}
+
+
+dl{
+    font-size: 1.2em;
+}
+
+
+#resume {
+    clear: both;
+    padding: 5%;
+    padding-top: 0;
+    padding-bottom: 30%;
+}
+
+footer {
+    max-width: 100%;
+    padding: 0.5em;
+    margin: 0px;
+    border: 0px;
+    text-align: center;
+    background-color: #fff5e0;
+
+    font-size: 1.5em;
+}
+
+
+
+
+/*Link States*/
+
+/* unvisited + visited link */
+a:link, a:visited{
+    color: #9b7b00;
+    text-decoration: none;
+}
+
+a.heading:link, a.heading:visited {
+    color: deeppink;
+    text-decoration: none;
+}
+
+a.footer:link, a.footer:visited {
+    color: #ed77bd;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover, a.heading:hover {
+    color: #b8edff;
+    transition: .15s ease-in;
+}
+
+/* selected link */
+a:active, a.heading:active {
+    text-decoration: none;
+    color: #f5a6d5;
+}
+
+
+
+
+
+/*SVG*/
+
+#logo{
+
+  width: 55%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+path.flower{
+  fill:#f5a6d5;
+}
+path.boomerang{
+  opacity: 0.7;
+}
+
+/* SVG link states */
+
+.initials:hover{
+  fill: white;
+  transition: .15s ease-in;
+}
+.initials:active{
+  fill: #fcc;
+}
+
+
+
+
+
+
+
+/*MEDIA QUIERES*/
+
+@media (min-width: 30em) {
+
+a.nav,p{
+    font-size: 1.5em;
+}
+ul{
+    font-size: 1.2em;
+    }
+}
+ 
+
+@media (min-width: 60em) {
+
+#logo{
+    width: 15em;
+}
+    
+body {
+
+    color: black;
+    font-family: 'Handlee', cursive;
+    font-size: 1.1em;
+    line-height: 1.5;
+    background-color: #fffce1;
+    background-image: linear-gradient(0deg, rgb(96, 198, 234) -20%, rgb(249, 233, 247) 75%);
+    margin: 0;
+}
+    
+#container {
+    background-color: #fffce1;
+    background-attachment: fixed;
+    box-shadow: 0px -15px 4px 9px rgba(0, 0, 0, 0.13);
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 2em;
+    position: relative;
+    min-height: 100%;
+}
+    
+    
+nav {
+    position: sticky;
+    top: 0;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 120px;
+    border: 5px dotted deeppink;
+    padding: 10px;
+    margin-top: 3em;
+    background-color: transparent;
+    height: 60px;
+}
+    
+a.nav {
+    font-weight: bolder;
+    font-size: 2.5em;
+    background-color: #fffce1;
+    line-height: 100%;
+    margin: auto;
+    
+}
+
+main {
+    margin-top: 90px;
+    clear: both;
+}
+
+.portrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-radius: 600px;
+    border-width: 9px;
+    border-color: gold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+h1{
+    font-family: 'Seaweed Script', cursive;
+    font-size: 3em;
+    font-weight: bolder;
+    color: #db3d92;
+    text-align: center;
+    line-height: 20%;
+    
+
+/*
+    border: 5px solid white;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 10px 0px 5px;
+    margin: auto;
+*/
+}
+
+h2{
+    font-family: 'Bad Script', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 30%;
+
+    font-size: 3em;
+    color: #f81c97;
+}
+
+
+h3{
+    display: block;
+    font-family: 'Handlee', cursive;
+    font-size: 1.5em;
+    color: #9b7b00;
+    background-color: #ffe5e1;
+    padding: 0.8em 0.5em;
+    border-style: dotted;
+    border-radius: 0.5em;
+    border-color: ghostwhite;
+    font-size: 1.8em;
+}
+
+h4{
+    line-height: 5em;
+}
+
+h5{
+    font-size: 1.5em;
+    color: lightskyblue;
+    padding-left: 2em;
+    padding-top: 5em;
+    margin: 0;
+}
+
+audio{
+    padding-left: 2em;
+    padding-top: 0;
+}
+
+p{
+    font-family: 'Solway', sans-serif;
+    font-size: 1.7em;
+    color: deeppink;
+}
+
+ul{
+    color: black;
+/*    text-align: center;*/
+    list-style: none;
+    font-size: 1.5em;
+}
+
+p,ul{
+    display: block;
+    background-color: #fff4e1;
+    margin: 0;
+    padding: 0.5em;
+
+}
+
+ul{
+    font-family: fantasy;
+        font-size: 1.2em;
+}
+
+dl{
+    font-size: 1.2em;
+}
+
+
+#resume {    
+    clear: both;
+    padding: 5%;
+    padding-top: 0;
+    padding-bottom: 30%;
+}
+
+    .sections{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .column1{
+        width: 20%;
+    }
+    .column2{
+    width: 70%;
+    margin-right: 0;
+    padding-bottom: 0;
+    }
+    
+footer {
+    max-width: 100%;
+    padding: 0.5em;
+    margin: 0px;
+    border: 0px;
+    text-align: center;
+    background-color: #fff5e0;
+
+    font-size: 1.5em;
+}
+
+    
+    
+    
+    
+    
+    
+
+
+}
+
+
